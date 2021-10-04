@@ -5,7 +5,7 @@ OBJ_D = obj
 BIN_D = bin
 SRC_D = src
 
-all: 
+all: # ...
 
 
 .PHONY : clean

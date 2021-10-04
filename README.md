@@ -2,7 +2,10 @@
 
 # Lab work <mark>NUMBER</mark>: <mark>SHORT TOPIC</mark>
 Authors (team): <mark>AUTHORS WITH GITHUB LINKS</mark><br>
-Variant: <mark>VARIANT NUMBER SHOULD BE HERE. JUST NUMBER, NO WORDS, NO ADDITIONAL COMMENTS.</mark>
+Variant: <mark>VARIANT NUMBER SHOULD BE HERE. JUST NUMBER, NO WORDS, NO ADDITIONAL COMMENTS.</mark><br>
+<mark>ONE OF THREE WORDS SHOULD BE SPECIFIED: LINUX, WINDOWS or MACOS. NOT TWO, NOT THREE, ONLY ONE!</mark><br>
+OS: LINUX | WINDOWS | MACOS 
+
 ## Before 
 
 <mark>DESCRIBE PREREQUIREMENTS</mark>
@@ -33,5 +36,7 @@ Variant: <mark>VARIANT NUMBER SHOULD BE HERE. JUST NUMBER, NO WORDS, NO ADDITION
 # ATTENTION!
 Additional tasks not listed in the previous paragraph would not be graded.
 
-Be sure to provide a complete list of authors.
+Be sure to provide a complete list of authors, variant and OS.
+
+Output files names are: __call_from_c__, __call_from_s__
 
