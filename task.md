@@ -52,17 +52,17 @@ For each `a` and `b` the function should find such `x` that `|a*x + b|` is as sm
 6. Check if a\*x+b=0 solvable, 32-bit int, save as one-byte true/false.<br>
 function prototype
 ```
-void func (int32_t* a, int32_t* b, int32_t* x, uint8_t* result);
+void func (int32_t* a, int32_t* b, uint8_t* result, size_t size);
 ```
 7. Solve a\*x+b=0 in 32-bit float, save results in third.<br>
 function prototype
 ```
-void func (float32_t* a, float32_t* b, float32_t* c, size_t size);
+void func (float32_t* a, float32_t* b, float32_t* x, size_t size);
 ```
 8. Solve a\*x+b=0 in 64-bit float, save results in third.<br>
 function prototype
 ```
-void func (float64_t* a, float64_t* b, float64_t* c, size_t size);
+void func (float64_t* a, float64_t* b, float64_t* x, size_t size);
 ```
 9. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 32-bit int array<br>
 function prototype
