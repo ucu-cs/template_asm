@@ -74,15 +74,15 @@ function prototype
 ```
 void func (int64_t* input_array, size_t size, double* result);
 ```
-11. Find mean, mode, median and variance of given 32-bit int array.<br>
+11. Find min, max, mean, variance of given 32-bit int array.<br>
 function prototype 
 ```
-void func (int32_t* input_array, size_t size, double* mode, double* median, double* variance);
+void func (int32_t* input_array, size_t size, int32_t* min, int32_t* max, double* mean, double* variance);
 ```
-12. Find mean, mode, median and variance of given 64-bit int array.<br>
+12. Find min, max, mean, variance of given 64-bit int array.<br>
 function prototype
 ```
-void func (int64_t* input_array, size_t size, double* mode, double* median, double* variance);
+void func (int64_t* input_array, size_t size, int64_t* min, int64_t* max, double* mean, double* variance);
 ```
 13. Given 32-bit uint array check, if each number is prime or not, save as array of true/false<br>
 function prototype
