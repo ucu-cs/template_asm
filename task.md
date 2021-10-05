@@ -64,15 +64,15 @@ function prototype
 ```
 void func (double* a, double* b, double* x, size_t size);
 ```
-9. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 32-bit int array<br>
+9. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) and [arithmetic mean](https://en.wikipedia.org/wiki/arithmetic_mean) of given 32-bit int array<br>
 function prototype
 ```
-void func (int32_t* input_array, size_t size, double* result);
+void func (int32_t* input_array, size_t size, double* geometric_mean, double *arithmetic_mean);
 ```
-10. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 64-bit int array <br>
+10. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) and [arithmetic mean](https://en.wikipedia.org/wiki/arithmetic_mean) of given 64-bit int array <br>
 function prototype
 ```
-void func (int64_t* input_array, size_t size, double* result);
+void func (int64_t* input_array, size_t size, double *geometric_mean, dounle *arithmetic_mean);
 ```
 11. Find min, max, mean, variance of given 32-bit int array.<br>
 function prototype 
