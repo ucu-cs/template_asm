@@ -97,7 +97,7 @@ void func (uint64_t* input_array, uint8_t* is_prime_array, size_t size);
 15. Find sum of digits in a number <br>
 function prototype:
 ```
-size_t func (uint32_t number);
+uint8_t func (uint32_t number);
 ```
 
 ---
