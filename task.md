@@ -57,32 +57,32 @@ void func (int32_t* a, int32_t* b, uint8_t* result, size_t size);
 7. Solve a\*x+b=0 in 32-bit float, save results in third.<br>
 function prototype
 ```
-void func (float32_t* a, float32_t* b, float32_t* x, size_t size);
+void func (float* a, float* b, float* x, size_t size);
 ```
 8. Solve a\*x+b=0 in 64-bit float, save results in third.<br>
 function prototype
 ```
-void func (float64_t* a, float64_t* b, float64_t* x, size_t size);
+void func (double* a, double* b, double* x, size_t size);
 ```
 9. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 32-bit int array<br>
 function prototype
 ```
-void func (int32_t* input_array, size_t size, float64_t* result);
+void func (int32_t* input_array, size_t size, double* result);
 ```
 10. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 64-bit int array <br>
 function prototype
 ```
-void func (int64_t* input_array, size_t size, float64_t* result);
+void func (int64_t* input_array, size_t size, double* result);
 ```
 11. Find mean, mode, median and variance of given 32-bit int array.<br>
 function prototype 
 ```
-void func (int32_t* input_array, size_t size, float64_t* mode, float64_t* median, float64_t* variance);
+void func (int32_t* input_array, size_t size, double* mode, double* median, double* variance);
 ```
 12. Find mean, mode, median and variance of given 64-bit int array.<br>
 function prototype
 ```
-void func (int64_t* input_array, size_t size, float64_t* mode, float64_t* median, float64_t* variance);
+void func (int64_t* input_array, size_t size, double* mode, double* median, double* variance);
 ```
 13. Given 32-bit uint array check, if each number is prime or not, save as array of true/false<br>
 function prototype
@@ -116,21 +116,21 @@ int32_t func (int32_t first, int32_t common_ratio, int32_t n_of_elements, int32_
 11. Find sum of arithmetic progression 32-bit floats.<br>
 function prototype:
 ```
-float32_t func (float32_t first, float32_t common_difference, float32_t n_of_elements);
+float func (float first, float common_difference, float n_of_elements);
 ```
 12. Find sum of arithmetic progression 64-bit floats.<br>
 function prototype:
 ```
-float64_t func (float64_t first, float64_t common_difference, float64_t n_of_elements);
+double func (double first, double common_difference, double n_of_elements);
 ```
 13. Find sum of geometric progression 32-bit floats.<br>
 function prototype:
 ```
-float32_t func (float32_t first, float32_t common_ratio, float32_t n_of_elements);
+float func (float first, float common_ratio, float n_of_elements);
 ```
 14. Find sum of geometric progression 64-bit floats.<br>
 function prototype:
 ```
-float64_t func (float64_t first, float64_t common_ratio, float64_t n_of_elements);
+double func (double first, double common_ratio, double n_of_elements);
 ```
 
