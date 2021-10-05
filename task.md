@@ -37,9 +37,18 @@ function prototype:
 void func (uint64_t* input_array, size_t size);
 ```
 5. Solve a\*x+b=0 in 32-bit int (approximately) for two arrays, save results in third.<br>
+function prototype
 ```
 void func (int32_t* a, int32_t* b, int32_t* x, size_t size);
 ```
+remarks:<br>
+For each `a` and `b` the function should find such `x` that `|a*x + b|` is as small as possible.<br>
+* ` a == 3, b == 10` \t `-> x == -3`
+* ` a == 3, b == 8` \t `-> x == -3`
+* ` a == 3, b == -8` \t `-> x == 3`
+* ` a == -3, b == 8` \t `-> x == 3`
+* ` a == 4, b == 10` \t `-> x == -2, x == -3` (both are valid)
+
 6. Check if a\*x+b=0 solvable, 32-bit int, save as one-byte true/false.<br>
 function prototype
 ```
@@ -55,12 +64,12 @@ function prototype
 ```
 void func (float64_t* a, float64_t* b, float64_t* c, size_t size);
 ```
-9. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 32-bit int array
+9. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 32-bit int array<br>
 function prototype
 ```
 void func (int32_t* input_array, size_t size, float64_t* result);
 ```
-10. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 64-bit int array
+10. Find [geometric mean](https://en.wikipedia.org/wiki/Geometric_mean) of given 64-bit int array <br>
 function prototype
 ```
 void func (int64_t* input_array, size_t size, float64_t* result);
@@ -75,17 +84,17 @@ function prototype
 ```
 void func (int64_t* input_array, size_t size, float64_t* mode, float64_t* median, float64_t* variance);
 ```
-13. Given 32-bit uint array check, if each number is prime or not, save as array of true/false
+13. Given 32-bit uint array check, if each number is prime or not, save as array of true/false<br>
 function prototype
 ```
 void func (uint32_t* input_array, uint8_t* is_prime_array, size_t size);
 ```
-14. Given 64-bit uint array check, if each number is prime or not, save as array of true/false
+14. Given 64-bit uint array check, if each number is prime or not, save as array of true/false<br>
 function prototype
 ```
 void func (uint64_t* input_array, uint8_t* is_prime_array, size_t size);
 ```
-15. Find sum of digits in a number
+15. Find sum of digits in a number <br>
 function prototype:
 ```
 size_t func (uint32_t number);
