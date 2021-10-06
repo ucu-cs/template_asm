@@ -8,19 +8,27 @@
 ### Important requirements:
 - do not change the project structure
 - output files should be in 'bin/' directory, named `call_from_c` and `call_from_s`
+
 ### Info about tests:
 - automated tests will parse your `README.md` to check your variant number and OS
 - tests will be publicly available (not in 2021, but after)
 - input arrays always have equal size
 - do not change project template structure
+
 ### Evaluation
 - project can be compiled using your makefile, without any modifications, on the system cpecified in README - 0.25
 - easy tests pass - 0.25
 - middle tests pass - 0.5
 - hard tests pass - 1
-
-- All requirements satisfied (README, project structure, deadline, submitting rules) - 1
+- All requirements satisfied (README, project structure, deadline, submitting rules, ) - 1
 - Point after personal code review from teacher or teacher assistant (only if code CAN BE COMPILED) - 1
+
+### Penalties
+- deadline overdue to one week - maximum 50% of each point per task
+- deadline overdue on more then one week - graidind starts with (-4) points (maximum 0)
+- task not submitted to the exam session - (-8) points
+- plagiarism more than 40% using moss checking system - (-4) for the lab, and letter to the faculty administration
+- additional penalties (a.e. for archives on GitHub, similarity with compiled-generated code) - up to teacher, but not more than (-4) points in total.
 
 ### Tasks
 
