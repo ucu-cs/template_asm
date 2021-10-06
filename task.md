@@ -13,6 +13,14 @@
 - tests will be publicly available (not in 2021, but after)
 - input arrays always have equal size
 - do not change project template structure
+### Evaluation
+- project can be compiled using your makefile, without any modifications, on the system cpecified in README - 0.25
+- easy tests pass - 0.25
+- middle tests pass - 0.5
+- hard tests pass - 1
+
+- All requirements satisfied (README, project structure, deadline, submitting rules) - 1
+- Point after personal code review from teacher or teacher assistant (only if code CAN BE COMPILED) - 1
 
 ### Tasks
 
