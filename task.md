@@ -23,6 +23,11 @@
 - All requirements satisfied (README, project structure, deadline, submitting rules, ) - 1
 - Point after personal code review from teacher or teacher assistant (only if code CAN BE COMPILED) - 1
 
+### Submition
+- create a new branch `dev`
+- all development should be in `dev` branch
+- when you think your lab work is ready, make a `pull request` to `master` branch (DO NOT MERGE IT) and submit your task on CMS
+
 ### Penalties
 - deadline overdue to one week - maximum 50% of each point per task
 - deadline overdue on more then one week - graidind starts with (-4) points (maximum 0)
@@ -115,6 +120,12 @@ function prototype:
 ```
 uint8_t func (uint32_t number);
 ```
+---
+
+## Additional tasks
+#### 1. (4 points) The same function but for one of the following ISA's: ARM Cortex A, ARM Cortex M, AVR8
+#### 2. (4 points) Call your asm function from Python, Rust, Pascal or other programming language
+#### 3. (4 points) Implement your C-strings lab (could be with fixed buffer) on assembler, and compare code performance
 
 ---
 ## Previous tasks (replaced)
