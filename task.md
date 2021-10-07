@@ -116,12 +116,72 @@ function prototype
 void func (uint64_t* input_array, uint8_t* is_prime_array, size_t size);
 ```
 15. Find sum of digits in a number <br>
-function prototype:
+function prototype
 ```
 uint8_t func (uint32_t number);
 ```
 ---
+### Bonus Tasks
 
+16. Given a square (NxN) matrix as a linear one-dimensional array of 64-bit uint, transpose it inplace <br>
+function prototype
+```
+void func (uint64_t* matrix, uint8_t size);
+```
+
+Additional tasks: \
+(2 points) Use SIMD instructions to improve performance \
+(2 points) Implement a recursive "cache-oblivious" algorithm.
+
+17. Given a square (NxN) matrix as a two-dimensional array (array of arrays) of 32-bit uint, transpose it inplace <br>
+function prototype
+```
+void func (uint32_t** matrix, uint8_t size);
+```
+18. Given a pointer to a linked list, reverse it inplace. <br>
+function prototype 
+```
+struct linked_list_node* func (struct linked_list_node* node);
+```
+where `struct linked_list_node` is defined as
+```
+struct linked_list_node
+{
+    struct linked_list_node* next;
+    int32_t data;
+};
+```
+19. Given a linked list, reverse it inplace. <br>
+function prototype 
+```
+struct linked_list_node* func (struct linked_list_node* node);
+```
+where `struct linked_list_node` is defined as
+```
+struct linked_list_node
+{
+    struct linked_list_node* next;
+    int64_t data;
+};
+```
+remarks: <br>
+Note that, unlike in 18th task, linked list is passed by value and not as a pointer.
+
+20. Given an unsigned 2-byte value, convert it to a sequence of 4 ASCII characters, representing the value in hexadecimal.<br>
+function prototype 
+```
+void func (uint16_t number, char* chars);
+```
+remarks: <br>
+A few examples of values and corresponding ascii: \
+10 -> 000A\
+17 -> 0011\
+255 -> 00FF\
+266 -> 010A\
+57005 -> DEAD\
+Don't forget about endianess of your system!
+
+---
 ## Additional tasks
 #### 1. (4 points) The same function but for one of the following ISA's: ARM Cortex A, ARM Cortex M, AVR8
 #### 2. (4 points) Call your asm function from Python, Rust, Pascal or other programming language
