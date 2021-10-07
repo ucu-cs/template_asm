@@ -1,4 +1,4 @@
-# UCU fasm lab work, write given function on assembler
+# POK Lab work 3. Write given function on assembler (FASM only)
 
 ### Task (4 points)
 #### Implement function in assembler
