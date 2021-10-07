@@ -151,7 +151,7 @@ struct linked_list_node
     int32_t data;
 };
 ```
-19. Given a linked list, reverse it inplace. <br>
+19. Given a pointer to a linked list, reverse it inplace. <br>
 function prototype 
 ```
 struct linked_list_node* func (struct linked_list_node* node);
@@ -160,12 +160,12 @@ where `struct linked_list_node` is defined as
 ```
 struct linked_list_node
 {
-    struct linked_list_node* next;
     int64_t data;
+    struct linked_list_node* next;
 };
 ```
 remarks: <br>
-Note that, unlike in 18th task, linked list is passed by value and not as a pointer.
+Note that the structure differs from the one given in 18th task.
 
 20. Given an unsigned 2-byte value, convert it to a sequence of 4 ASCII characters, representing the value in hexadecimal.<br>
 function prototype 
