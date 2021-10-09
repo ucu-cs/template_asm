@@ -181,6 +181,25 @@ A few examples of values and corresponding ascii: \
 57005 -> DEAD\
 Don't forget about endianess of your system!
 
+21. Given an expression in polish notation, evaluate it return the result. <br>
+function prototype
+```
+int64_t func (char* expression);
+```
+remarks: <br>
+For simplicity, we assume the following conditions are always met:
+- `expression` can be evaluated
+- `expression` is a valid non-null and non-empty C-string consisting of ASCII characters
+- `expression` can only contain operators `+`,`-` and numbers `0-9`, encoded as ASCII characters
+- 64-bit integer overflows cannot occur
+
+In order to determine the size of the string, consider implementing a separate `strlen` procedure.
+
+Examples of expressions and corresponding evaluation results:\
+`"+11"` -> 2 \
+`"-1+2-33"` -> -1 \
+`"-+8-642"` -> 8 
+
 ---
 ## Additional tasks
 #### 1. (4 points) The same function but for one of the following ISA's: ARM Cortex A, ARM Cortex M, AVR8
