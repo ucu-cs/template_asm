@@ -203,7 +203,6 @@ Examples of expressions and corresponding evaluation results:\
 
 ---
 ## Work in progress tasks
-> [!NOTE]
 > Note to contributors: this is a pool of other tasks the are or were considered, but either were discarded due to difficulty, or are still being worked on. It's possible to switch out some of the tasks from previous sections with these. In such case, the replaced task goes into the [Previous tasks (replaced)](#previous-tasks-replaced) section. Also, the total number of tasks must be divisible by 3, therefore new tasks must be added in triplets. 
 
 22. Given a C-string, count the number of characters, words and lines in it. \
@@ -247,7 +246,7 @@ function prototype
 int64_t func (int64_t *a_x, int64_t *a_y, int64_t *b_x, int64_t *b_y, uint64_t size, int64_t p_x, int64_t p_y)
 ```
 
-26. Given two arrays a and b of 32-bit signed fixed point values with radix point positions given in r_a and r_b, compute their sum and store the result in an array of 64-bit signed **Q**min(r_a, r_b) fixed point values. \
+26. Given two arrays a and b of 32-bit signed fixed point values with radix point positions given in r_a and r_b, compute their sum and store the result in an array of 64-bit signed **Q**<img src="https://render.githubusercontent.com/render/math?math=\min(r_a,%20r_b)"> fixed point values. \
 function prototype
 ```c
 void func (int32_t* a, int32_t* b, uint8_t r_a, uint8_t r_b, int64_t* results, uint64_t size)
@@ -283,7 +282,7 @@ void func (uint16_t* codes, uint8_t* two_errors, uint64_t size)
 ```
 Hint: Error correction and detection can be achieved only by using a few shift and `xor` instructions. Do not attempt to use the matrix method! In case you need a refresher about how to work with hamming codes, consider watching 3blue1brown's [video](https://www.youtube.com/watch?v=X8jsijhllIA) on this topic. If you want to know how such error correction can be implemented in hardware, consider [this](https://www.youtube.com/watch?v=h0jloehRKas) video as well.
 
-30. Given an andjacency matrix of an undirected graph with n nodes, check whether it is a complete graph and return 0 or 1 accordingly.\
+30. Given an andjacency matrix of an undirected graph with n nodes, check whether it is a connected graph and return 0 or 1 accordingly.\
 function prototype
 ```c
 uint8_t func (uint8_t* adjacency, uint8_t nodes)
