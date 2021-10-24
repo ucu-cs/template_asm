@@ -1,10 +1,12 @@
 # POK Lab work 3. Write given function on assembler (FASM only)
 
 ### Task (4 points)
-#### Implement function in assembler
-#### Implement 'main.s', call your function from asm program
-#### Implement 'main.c', call your function from C program
-#### Implement makefile for automated building of your project
+#### Implement two of the three functions assigned to you using the assembler.
+#### Write a program that calls your functions from the assembler program `main_a.asm`.
+#### Write a program that calls your functions from the C program `main_c.c`.
+#### Provide makefile for automated building of your project.
+#### Provide README.md with the important information: target operating system (OS), GitHub link, task variants implemented, team members, and implemented additional tasks if any. This information would be extracted by the tests.
+
 ### Important requirements:
 - do not change the project structure
 - output files should be in 'bin/' directory, named `call_from_c` and `call_from_s`
@@ -23,10 +25,10 @@
 - All requirements satisfied (README, project structure, deadline, submitting rules, ) - 1
 - Point after personal code review from teacher or teacher assistant (only if code CAN BE COMPILED) - 1
 
-### Submition
-- create a new branch `dev`
-- all development should be in `dev` branch
-- when you think your lab work is ready, make a `pull request` to `master` branch (DO NOT MERGE IT) and submit your task on CMS
+<!-- ### Submition -->
+<!-- - create a new branch `dev` -->
+<!-- - all development should be in `dev` branch -->
+<!-- - when you think your lab work is ready, make a `pull request` to `master` branch (DO NOT MERGE IT) and submit your task on CMS -->
 
 ### Penalties
 - deadline overdue to one week - maximum 50% of each point per task
@@ -37,25 +39,25 @@
 
 ### Tasks
 
-1. Sort 32-bit int array.<br>
+1. Sort 32-bit uint array.<br>
 function prototype:
-```c
-void func (int32_t* input_array, size_t size);
-```
-2. Sort 32-bit uint array.<br>
-function prototype: 
 ```c
 void func (uint32_t* input_array, size_t size);
 ```
-3. Sort 64-bit int array.<br>
-function prototype:
+2. Sort 32-bit int array.<br>
+function prototype: 
 ```c
-void func (int64_t* input_array, size_t size);
+void func (int32_t* input_array, size_t size);
 ```
-4. Sort 64-bit uint array.<br>
+3. Sort 64-bit uint array.<br>
 function prototype:
 ```c
 void func (uint64_t* input_array, size_t size);
+```
+4. Sort 64-bit int array.<br>
+function prototype:
+```c
+void func (int64_t* input_array, size_t size);
 ```
 5. Solve a\*x+b=0 in 32-bit int (approximately) for two arrays, save results in third.<br>
 function prototype
@@ -118,10 +120,18 @@ void func (uint64_t* input_array, uint8_t* is_prime_array, size_t size);
 15. Find sum of digits in a number <br>
 function prototype
 ```c
-uint8_t func (uint32_t number);
+uint32_t func (uint32_t number);
 ```
+
 ---
-### Bonus Tasks
+## Additional tasks
+#### 2. (2 points) Call your asm function from Python, Rust, Pascal or other programming language
+#### 1. (4 points) The same function but for one of the following ISA's: ARM Cortex A, ARM Cortex M, AVR8
+#### 3. (4 points) Implement your C-strings lab (could be with fixed buffer) on assembler, and compare code performance
+
+---
+## Bonus Tasks
+#### (up to two points for first two tasks, up to one for three next)
 
 16. Given a square (NxN) matrix as a linear one-dimensional array of 64-bit uint, transpose it inplace <br>
 function prototype
@@ -200,6 +210,7 @@ Examples of expressions and corresponding evaluation results:\
 `"+11"` -> 2 \
 `"-1+2-33"` -> -1 \
 `"-+8-642"` -> 8 
+
 
 ---
 ## Work in progress tasks
@@ -294,44 +305,3 @@ Hints:
 - Create a local array of size `nodes`, where each element is a boolean flag that shows whether or not the node was already visited.
 - To create a local array, do not attempt to allocate it dynamically! Static arrays in `.data` are allowed, but discouraged. The best approach is to allocate it on a stack. In order to properly index it without affecting the DFS stack, consider using `rbx` stack frame variable.
 - Dont forget about stack alignment.
-
----
-## Additional tasks
-#### 1. (4 points) The same function but for one of the following ISA's: ARM Cortex A, ARM Cortex M, AVR8
-#### 2. (4 points) Call your asm function from Python, Rust, Pascal or other programming language
-#### 3. (4 points) Implement your C-strings lab (could be with fixed buffer) on assembler, and compare code performance
-
----
-## Previous tasks (replaced)
-
-9. find sum of arithmetic progression and set a flag if result is 32-bit or not.<br>
-function prototype:
-```
-int32_t func (int32_t first, int32_t common_difference, int32_t n_of_elements, int32_t* flag);
-```
-10. 9 but geometry progression.<br>
-function prototype:
-```
-int32_t func (int32_t first, int32_t common_ratio, int32_t n_of_elements, int32_t* flag);
-```
-11. Find sum of arithmetic progression 32-bit floats.<br>
-function prototype:
-```
-float func (float first, float common_difference, float n_of_elements);
-```
-12. Find sum of arithmetic progression 64-bit floats.<br>
-function prototype:
-```
-double func (double first, double common_difference, double n_of_elements);
-```
-13. Find sum of geometric progression 32-bit floats.<br>
-function prototype:
-```
-float func (float first, float common_ratio, float n_of_elements);
-```
-14. Find sum of geometric progression 64-bit floats.<br>
-function prototype:
-```
-double func (double first, double common_ratio, double n_of_elements);
-```
-
