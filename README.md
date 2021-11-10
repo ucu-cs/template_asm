@@ -39,5 +39,5 @@ Additional tasks not listed in the previous paragraph would not be graded.
 
 Be sure to provide a complete list of authors, variant and OS.
 
-Output files names are: __call_from_c__, __call_from_s__
+Output files names are: __call_from_c__, __call_from_а__
 
