@@ -9,7 +9,7 @@
 
 ### Important requirements:
 - do not change the project structure
-- output files should be in 'bin/' directory, named `call_from_c` and `call_from_s`
+- output files should be in 'bin/' directory, named `call_from_c` and `call_from_a`
 
 ### Info about tests:
 - automated tests will parse your `README.md` to check your variant number and OS
