@@ -1,4 +1,4 @@
-# POK Lab work 3. Write given function on assembler (FASM only)
+# POK Lab work 3. Write given function on assembler (GAS only)
 
 ### Task (4 points)
 #### Implement two of the three functions assigned to you using the assembler.
