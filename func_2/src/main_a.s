@@ -1,1 +1,1 @@
-; implement calling your 'func' function from fasm main.
+; implement calling your 'func' function from asm main.

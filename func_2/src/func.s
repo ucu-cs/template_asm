@@ -1,4 +1,4 @@
-; implement function in fasm.
+; implement function in GAS.
 ; IMPORTANT! Function name should be 'func'!
 
 
