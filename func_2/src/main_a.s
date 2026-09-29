@@ -1,1 +1,1 @@
-; implement calling your 'func' function from asm main.
+# Demonstrate calling 'func' from an assembly-language program.

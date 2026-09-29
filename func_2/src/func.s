@@ -1,5 +1,5 @@
-; implement function in GAS.
-; IMPORTANT! Function name should be 'func'!
+# Implement the function using GNU assembler (GAS).
+# IMPORTANT: The function must be named 'func'!
 
 
 
